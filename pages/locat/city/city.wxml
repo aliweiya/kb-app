@@ -1,0 +1,34 @@
+<view class="kb-bg">
+  <view class="container">
+    <view class="city-grey-txt">定位到的城市</view>
+    <view class="city-box">
+      <image class="city-locat-icon" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/global_icon_location.png"></image>
+      <text class="city-name">{{physicalCity}}</text>
+    </view>
+    <view class="city-grey-txt">全部</view>
+    <view scroll-y="true" class="scroll-city-list" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <block wx:for="{{cityList}}" wx:key="provice">
+        <view class="provin-wrap">
+          <view class="city-item city-provice {{item.chlname === cityNow? 'city-now' : ''}}" bindtap="provinEven" data-allinfo="{{item}}">
+            {{item.chlname}}
+            <image class="city-arrow base-right arrow-down" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/arrowright.png" wx-if="{{item.cityArr.length}}"></image>
+            <view class="city-provin-check" wx-if="{{item.cityArr.length && item.chlname === provinNow}}">已选地区</view>
+            <view class="base-right" wx-if="{{item.chlname === cityNow}}">
+              <icon size="19" type="success_no_circle"></icon>
+              <text class="city-order-txt">已定制</text>
+            </view>
+          </view>
+        </view>
+        <view class="city-wrap " wx-if="{{item.isExtend}}">
+          <view wx:for="{{item.cityArr}}" wx:key="city" class="city-item {{item.chlname === cityNow? 'city-now' : ''}}" bindtap="provinEven" data-allinfo="{{item}}">
+            {{item.chlname}}
+            <view class="base-right" wx-if="{{item.chlname === cityNow}}">
+              <icon size="19" type="success_no_circle"></icon>
+              <text class="city-order-txt">已定制</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

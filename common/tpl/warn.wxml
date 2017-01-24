@@ -1,0 +1,39 @@
+<template name="warn">
+  <view class="kb-warn-wrap">
+    <view class="kb-loadingbg-wrap" wx:if="{{isShowLoading}}">
+      <image class="kb-logo-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/holder_bigpic.png"></image>
+      <image class="kb-loading-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/global_detail_loading.gif"></image>
+    </view>
+    <view class="kb-blank-wrap" wx:if="{{isBlank}}">
+      <image class="kb-warn-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/mascot_kong.png"></image>
+      <text class="bk-warn-black">页面内容是空的</text>
+      <text class="kb-warn-grey">页面君翻箱底给你看，真没有呢</text>
+    </view>
+    <view class="kb-noNet-wrap" wx:if="{{isNoNet}}">
+      <image class="kb-warn-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/mascot_wuwang.png"></image>
+      <text class="bk-warn-black">网络无法连接</text>
+      <text class="kb-warn-grey">模仿请慎重，稍后再试</text>
+    </view>
+    <view class="kb-404-wrap" wx:if="{{is404}}">
+      <image class="kb-warn-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/mascot_404.png"></image>
+      <text class="bk-warn-black">页面出错</text>
+      <text class="kb-warn-grey">请稍候再试</text>
+    </view>
+  </view>
+</template>
+<template name="article-warn">
+  <view class="kb-loadingbg-wrap" wx:if="{{showType == 0}}">
+    <image class="kb-logo-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/holder_bigpic.png"></image>
+    <image class="kb-loading-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/global_detail_loading.gif"></image>
+  </view>
+  <view class="kb-blank-wrap" wx:if="{{showType == 2}}">
+    <image class="kb-warn-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/mascot_kong.png"></image>
+    <text class="bk-warn-black">页面内容是空的</text>
+    <text class="kb-warn-grey">页面君翻箱底给你看，真没有呢</text>
+  </view>
+  <view class="kb-noNet-wrap" wx:if="{{showType == 3}}">
+    <image class="kb-warn-image" src="/images/mascot_wuwang.png"></image>
+    <text class="bk-warn-black">网络错误</text>
+    <text class="kb-warn-grey">模仿请慎重，稍后再试</text>
+  </view>
+</template>

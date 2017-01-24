@@ -1,0 +1,98 @@
+.video-chlicon {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 48rpx;
+  overflow: hidden;
+  margin-right: 8rpx;
+  display: inline-block;
+}
+
+.video-sourch-txt {
+  display: inline-block;
+  font-size: 30rpx;
+  color: #1a1a1a;
+  line-height: 48rpx;
+  vertical-align: top;
+}
+
+.video-source-wrap {
+  border-radius: 8rpx;
+  vertical-align: top;
+  height: 55rpx;
+  display: inline-block;
+  padding: 6rpx 21rpx 0 6rpx;
+}
+
+.video-comment-wrap {
+  padding-top: 12rpx;
+}
+
+.video-comment-icon {
+  width: 40rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+}
+
+.video-comment-txt {
+  font-size: 24rpx;
+  color: #666;
+  line-height: 36rpx;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.bottom-wrap {
+  padding: 0 30rpx;
+}
+
+.kb-card {
+  margin: 0;
+  background: #f6f6f6;
+  margin-bottom: 18rpx;
+  border-bottom: none;
+  padding-bottom: 18rpx;
+}
+
+.video-img-wrap2 {
+  width: 750rpx;
+  height: 420rpx;
+  position: relative;
+}
+.video-shadow{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15);
+  position: absolute;
+}
+
+.video-img {
+  width: 750rpx;
+  height: 420rpx;
+}
+
+.kb-title {
+  padding: 30rpx;
+}
+
+.video-time-num {
+  right: 31rpx;
+  bottom: 25rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+
+.video-bottom-content{
+  padding: 20rpx 30rpx;
+  overflow: hidden;
+}
+.video-page{
+  background: #f6f6f6;
+  min-height:100%;
+}
+.video-style-card{
+  background: #eee;
+  padding-bottom: 18rpx;
+}
+.video-item-wrap{
+  background: #f6f6f6;
+}

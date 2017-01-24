@@ -1,0 +1,70 @@
+<import src="../../common/tpl/newsItem.wxml" />
+
+<!--index.wxml-->
+<view class="locat-page kb-bg" bindtouchstart="touchstart" bindtouchend="touchend">
+  <view class="bk-top-warn base-center" animation="{{animationData}}" wx:if="{{isShowTopNum}}">
+    <text class="kb-new-txt">{{pullNewsInfo}}</text>
+  </view>
+  <view class="locat-box" wx:if="{{cityName}}">
+    <navigator class="locat-city-wrap" url="city/city" hover-class="navigator-hover">
+      <view class="loact-cw-box">
+        <image class="locat-icon" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/global_icon_location.png"></image>
+        <view class="locat-city-txt">当前城市为
+          <text class="locat-txt">{{cityName}}</text>，点击切换城市
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="" wx:if="{{isLocatFail}}">
+    <view class="base-center blank-img-wrap">
+      <image class="blank-big-img" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/jurisdiction_lbs.png"></image>
+    </view>
+    <view class="base-center">
+      <text class="blank-locat-new">本地新闻</text>
+    </view>
+    <view class="base-center blank-tip-wrap">
+      <text class="blank-tip">选择你关心的城市，了解这里的一切</text>
+    </view>
+    <navigator url="./city/city" class="blank-city-btn">请选择你关心的城市</navigator>
+  </view>
+  <view class="kb-warn-wrap">
+    <view class="kb-loadingbg-wrap" wx:if="{{isShowLoading}}">
+      <image class="kb-logo-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/holder_bigpic.png"></image>
+      <image class="kb-loading-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/global_detail_loading.gif"></image>
+    </view>
+    <view class="kb-blank-wrap" wx:if="{{isBlank}}">
+      <image class="kb-warn-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/mascot_kong.png"></image>
+      <text class="bk-warn-black">页面内容是空的</text>
+      <text class="kb-warn-grey">页面君翻箱底给你看，真没有呢</text>
+    </view>
+    <view class="kb-noNet-wrap" wx:if="{{isNoNet}}">
+      <image class="kb-warn-image" src="/images/mascot_wuwang.png"></image>
+      <text class="bk-warn-black">网络无法连接</text>
+      <text class="kb-warn-grey">模仿请慎重，稍后再试</text>
+    </view>
+    <view class="kb-404-wrap" wx:if="{{is404}}">
+      <image class="kb-warn-image" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/mascot_404.png"></image>
+      <text class="bk-warn-black">页面出错</text>
+      <text class="kb-warn-grey">请稍候再试</text>
+    </view>
+  </view>
+  <view class="container">
+    <block wx:for="{{pullListDate}}" wx:key="unique">
+      <template is="{{'tpl_'+ item.picShowType }}" data="{{...item}}" />
+    </block>
+
+    <!--刷新-->
+    <view class="reflash-wrap" wx:if="{{pullListDate.length && newsListData.length}}" bindtap="reflash">
+      <text class="reflash-txt">上次看到这里</text>
+    </view>
+
+    <!--旧新闻-->
+    <block wx:for="{{newsListData}}" wx:key="unique">
+      <template is="{{'tpl_'+(item.picShowType)}}" data="{{...item}}" />
+    </block>
+    <view class="kb-bottom-lod-wrap">
+      <image class="kb-loading-image" wx:if="{{newsListData.length > 3&& !isNoMore}}" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/global_detail_loading.gif"></image>
+      <text class="kb-bottom-nomore" wx:if="{{isNoMore}}">都看完了，试试别的频道吧</text>
+    </view>
+  </view>
+</view>

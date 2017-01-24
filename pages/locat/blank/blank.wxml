@@ -1,0 +1,12 @@
+<view class="kb-bg blank-page">
+    <view class="base-center blank-img-wrap">
+        <image class="blank-big-img" src="http://mat1.gtimg.com/www/images/newsapp/wxapp/kuaibao/jurisdiction_lbs.png"></image>
+    </view>
+    <view class="base-center">
+        <text class="blank-locat-new">本地新闻</text>
+    </view>
+    <view class="base-center blank-tip-wrap">
+        <text class="blank-tip">选择你关心的城市，了解这里的一切</text>
+    </view>
+    <button class="blank-city-btn">请选择你关系的城市</button>
+</view>

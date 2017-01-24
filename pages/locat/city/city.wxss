@@ -1,0 +1,70 @@
+.city-page{
+
+}
+.city-box {
+  background: #ffffff;
+  padding: 30rpx;
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.city-locat-icon {
+  width: 26rpx;
+  height: 35rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+}
+
+.city-name {
+  font-size: 34rpx;
+  color: #000;
+}
+
+.city-arrow {
+  width: 20rpx;
+  height: 30rpx;
+  margin-top: 10rpx;
+}
+.city-grey-txt{
+  font-size: 28rpx;
+  color: #888888;
+  padding: 34rpx 0rpx 20rpx 30rpx;
+}
+.scroll-city-list{
+  background: #ffffff;
+}
+.city-item{
+  font-size: 34rpx;
+  margin-left: 90rpx;
+  border-bottom: 1rpx solid #e4e4e4;
+  padding: 27rpx 30rpx 27rpx 0;
+}
+.city-order-txt{
+    color: #43b000;
+    margin-left: 6rpx;
+    font-size: 28rpx;
+    vertical-align: top;
+    margin-top: 4rpx;
+    display: inline-block;
+}
+.arrow-down{
+  transform: rotate(90deg);
+}
+.city-provice{
+  margin-left: 30rpx;
+}
+.scroll-city-list{
+    border-top: 1px solid #e4e4e4;
+    padding-bottom:60rpx;
+}
+.city-now{
+  color: #b2b2b2;
+}
+
+.city-provin-check{
+  float: right;
+  margin-right: 30rpx;
+  color: #888;
+  top: 30rpx;
+  font-size: 28rpx;
+}

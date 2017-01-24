@@ -1,0 +1,66 @@
+.blank-big-img {
+  width: 294rpx;
+  height: 191rpx;
+}
+
+.blank-img-wrap {
+  padding-top: 189rpx;
+  margin-bottom: 40rpx;
+}
+
+.blank-locat-new {
+  font-size: 40rpx;
+  color: #000;
+}
+
+.blank-tip {
+  color: #888;
+  font-size: 30rpx;
+}
+
+.blank-city-btn {
+  background: #6899da;
+  border: 2rpx solid rgba(4, 4, 4, 0.08);
+  border-radius: 10rpx;
+  width: 666rpx;
+  height: 90rpx;
+  font-size: 36rpx;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 90rpx;
+}
+
+.blank-tip-wrap{
+  margin: 48rpx 0 65rpx 0;
+}
+
+
+.locat-city-wrap{
+  background:#ededed;
+  border-radius:8rpx;
+  padding: 16rpx 0;
+  text-align: center;
+}
+.locat-city-txt{
+  font-size: 30rpx;
+  color: #666666;
+  display: inline-block;
+  vertical-align:top;
+  line-height: 30rpx;
+}
+.locat-icon{
+  width: 23rpx;
+  height: 31rpx;
+  margin-right: 6rpx;
+  vertical-align: top;
+}
+.locat-box{
+  padding: 30rpx 30rpx 0;
+}
+.locat-txt{
+  color: #e94220;
+}
+.loact-cw-box{
+  height: 30rpx;
+}

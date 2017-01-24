@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/locat/city/city",
+    "pages/locat/locat",
+    "pages/festival/festival",
+    "pages/video/video",
+    "pages/locat/blank/blank",
+    "pages/article/media/media",
+    "pages/article/normal/normal",
+    "pages/article/normal_v/normal_v",
+    "pages/article/video/video",
+    "pages/article/topic/topic",
+    "pages/article/topic_v/topic_v"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "天天快报",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":true,
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#lalala",
+    "selectedColor": "#e94220",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "推荐",
+      "iconPath": "images/list_icon_kuaibao.png",
+      "selectedIconPath": "images/list_icon_kuaibao_selected.png"
+    }, {
+      "pagePath": "pages/video/video",
+      "text": "视频",
+      "iconPath": "images/list_icon_video.png",
+      "selectedIconPath": "images/list_icon_video_selected.png"
+    },
+    {
+      "pagePath": "pages/festival/festival",
+      "text": "春节",
+      "iconPath": "images/list_icon_chunjie.png",
+      "selectedIconPath": "images/list_icon_chunjie_selected.png"
+    },
+    {
+      "pagePath": "pages/locat/locat",
+      "text": "本地",
+      "iconPath": "images/list_icon_lbs.png",
+      "selectedIconPath": "images/list_icon_lbs_selected.png"
+    }]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
